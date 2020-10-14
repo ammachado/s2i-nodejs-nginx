@@ -2,7 +2,8 @@
 
 # Change the npm registry mirror if provided
 if [ -n "$NPM_MIRROR" ]; then
-	npm config set registry $NPM_MIRROR
+  echo "---> Setting NPM mirror..."
+  npm config set registry $NPM_MIRROR
 fi
 
 if [[ -f yarn.lock ]]; then
